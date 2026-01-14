@@ -1,0 +1,23 @@
+{
+  "name": "simple_server",
+  "version": "1.0.0",
+  "description": "A simple server application",
+  "homepage": "https://github.com/Malcom-Yingwani/Node.js#readme",
+  "bugs": {
+    "url": "https://github.com/Malcom-Yingwani/Node.js/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Malcom-Yingwani/Node.js.git"
+  },
+  "license": "ISC",
+  "author": "Malcom Yingwani",
+  "type": "commonjs",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "http-status-codes": "^2.3.0"
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "name": "recipe_connection",
+  "version": "1.0.0",
+  "description": "An app to share cooking recipes",
+  "homepage": "https://github.com/Malcom-Yingwani/Node.js#readme",
+  "bugs": {
+    "url": "https://github.com/Malcom-Yingwani/Node.js/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Malcom-Yingwani/Node.js.git"
+  },
+  "license": "ISC",
+  "author": "Malcom Yingwani",
+  "type": "commonjs",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "cities": "^2.0.0"
+  }
+}
