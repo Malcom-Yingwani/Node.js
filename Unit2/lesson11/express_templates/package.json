@@ -1,0 +1,20 @@
+{
+  "name": "express_template",
+  "version": "1.0.0",
+  "description": "",
+  "license": "ISC",
+  "author": "Malcom Yingwani",
+  "type": "commonjs",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon main.js",
+    "dev": "nodemon main.js"
+  },
+  "dependencies": {
+    "ejs": "^4.0.1",
+    "express": "^5.2.1",
+    "express-ejs-layouts": "^2.5.1",
+    "http-status-codes": "^2.3.0"
+  }
+}
