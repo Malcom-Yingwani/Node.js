@@ -3,12 +3,17 @@ const mongoose = require("mongoose");
 
 exports.getAllSubscribers = (req, res, next) => {
   Subscriber.find({})
+    .exec()
     .then((subscribers) => {
       req.data = subscribers;
       next();
     })
     .catch((error) => {
+      console.error(error.message);
       next(error);
+    })
+    .then(() => {
+      console.log("Promise Complete");
     });
 };
 

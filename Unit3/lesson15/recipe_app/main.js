@@ -68,6 +68,8 @@ app.use(layouts);
 app.use(express.static("public"));
 app.use(errorControllers.logErrors);
 
+app.get("/", homeController.index);
+app.get("/courses", homeController.showCourses);
 app.get(
   "/subscribers",
   subscribersController.getAllSubscribers,
