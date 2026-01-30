@@ -24,22 +24,24 @@ let contacts = [
     zipCode: 19103,
   },
 ];
+let commands = [];
 Subscriber.deleteMany()
   .exec()
   .then(() => {
     console.log("Subscriber data is empty!");
+  })
+  .then(() => {
+    contacts.forEach((c) => {
+      commands.push(
+        Subscriber.create({
+          name: c.name,
+          email: c.email,
+          zipCode: c.zipCode,
+        }),
+      );
+    });
   });
-let commands = [];
 
-contacts.forEach((c) => {
-  commands.push(
-    Subscriber.create({
-      name: c.name,
-      email: c.email,
-      zipCode: c.zipCode,
-    }),
-  );
-});
 Promise.all(commands)
   .then((r) => {
     console.log(JSON.stringify(r));
