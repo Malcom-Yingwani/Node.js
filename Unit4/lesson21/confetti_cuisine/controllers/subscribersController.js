@@ -109,3 +109,17 @@ module.exports = {
     }
   },
 };
+
+/*
+This controller handles all subscriber-related actions for the application.
+It uses the Subscriber Mongoose model to:
+- Retrieve all subscribers from MongoDB and render them on the subscribers page
+- Display the contact (subscription) form
+- Save a new subscriber to the database when the form is submitted
+
+All database operations are asynchronous and use async/await syntax with 
+try/catch blocks to handle successful queries and errors.
+
+Overall, this file connects the routes to the database logic and controls
+what data is sent to each view.
+*/

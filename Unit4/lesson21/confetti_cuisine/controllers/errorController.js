@@ -14,3 +14,12 @@ exports.internalServerError = (error, req, res, next) => {
   res.status(errorCode);
   res.send(`${errorCode} | Sorry, our application is taking a nap!`);
 };
+
+// This code defines two Express.js middleware functions for error handling:
+//pageNotFoundError handles unrecognized routes by setting a 404 (Not Found)
+// status and rendering an error view.
+// internalServerError handles server-side errors by logging the error
+// stack trace, setting a 500 (Internal Server Error) status, and sending
+// a user-friendly error message in the response.
+// Overall, it provides basic handling for missing pages and unexpected
+// server errors.
