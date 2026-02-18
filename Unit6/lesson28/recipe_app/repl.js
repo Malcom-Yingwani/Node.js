@@ -5,7 +5,6 @@ const User = require("./models/user");
 
 mongoose.connect("mongodb://0.0.0.0:27017/recipe_db");
 
-
 // async function createAndLinkUser() {
 //   try {
 //     const testUser = await User.create({
@@ -16,13 +15,13 @@ mongoose.connect("mongodb://0.0.0.0:27017/recipe_db");
 //       email: "tracy@outlook.com",
 //       password: "pass123"
 //     });
-    
+
 //     const subscriber = await Subscriber.findOne({ email: testUser.email });
-    
+
 //     testUser.subscribedAccount = subscriber;
-    
+
 //     await testUser.save();
-    
+
 //     console.log("user updated");
 //     console.log(testUser);
 //     return testUser;
@@ -31,7 +30,6 @@ mongoose.connect("mongodb://0.0.0.0:27017/recipe_db");
 //   }
 // }
 // createAndLinkUser();
-
 
 // Subscriber.create({
 //   name: "Bhabha",
@@ -42,8 +40,6 @@ mongoose.connect("mongodb://0.0.0.0:27017/recipe_db");
 //   console.log(subscriber)
 //   )
 //   .catch((error) => console.log(error.message));
-
-
 
 // let subscriber;
 

@@ -11,7 +11,11 @@
     "start": "nodemon index.js"
   },
   "dependencies": {
-    "express": "^5.2.1"
+    "ejs": "^4.0.1",
+    "express": "^5.2.1",
+    "express-fileupload": "^1.5.2",
+    "mongodb": "4.0",
+    "mongoose": "^9.2.1"
   },
   "devDependencies": {
     "nodemon": "^3.1.11"
